@@ -12,6 +12,9 @@ const theme = createTheme({
     error: {
       main: "#E50918",
     },
+    background: {
+      default: "#ffffff",
+    },
   },
   typography: {
     button: {

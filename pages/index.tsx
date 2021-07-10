@@ -1,8 +1,10 @@
 import { Box, makeStyles, Typography } from "@material-ui/core";
 import React from "react";
+import AddressForm from "../components/AddressForm";
 import Header from "../components/header";
+import StartNowButton from "../components/StartNowButton";
 
-const useStyles = makeStyles(() => ({
+const useStyles = makeStyles((theme) => ({
   mainContent: {
     backgroundImage: "url('/BTS.jpg')",
     height: 900,
@@ -14,10 +16,21 @@ const useStyles = makeStyles(() => ({
   },
   mainTextArea: {
     width: "75%",
-    margin: "15px auto",
+    margin: "12px auto",
   },
   subTextArea: {
     marginTop: 5,
+  },
+  bottomContentWrapper: {
+    height: "55%",
+    background: "linear-gradient(rgba(0,0,0,0),rgba(0,0,0,1))",
+  },
+  addressFormContent: {},
+  startNowButtonContent: {
+    width: "100%",
+    height: "30%",
+    textAlign: "center",
+    marginTop: 20,
   },
 }));
 
@@ -34,8 +47,16 @@ const index = () => {
             <Typography variant="body1">BTSをもっと自由に。</Typography>
             <Typography variant="body1">いつでもキャンセルOK。</Typography>
             <Typography variant="body1">
-              アドレスを入力して、メンバーシップを開始してください。
+              アドレスを入力して、メンバーシップを開始、または再開してください。
             </Typography>
+          </Box>
+        </Box>
+        <Box className={classes.bottomContentWrapper}>
+          <Box className={classes.addressFormContent}>
+            <AddressForm />
+          </Box>
+          <Box className={classes.startNowButtonContent}>
+            <StartNowButton />
           </Box>
         </Box>
       </Box>
