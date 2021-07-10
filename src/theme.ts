@@ -10,11 +10,23 @@ const theme = createTheme({
       main: "#19857b",
     },
     error: {
-      main: red.A400,
+      main: "#E50918",
     },
-    // background: {
-    //   default: "#000000",
-    // },
+  },
+  typography: {
+    button: {
+      textTransform: "none",
+    },
+    h4: {
+      fontSize: 20,
+      fontWeight: "bold",
+      color: "#ffffff",
+      letterSpacing: -1,
+    },
+    body1: {
+      color: "#ffffff",
+      letterSpacing: -1,
+    },
   },
 });
 
