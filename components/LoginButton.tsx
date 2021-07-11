@@ -1,4 +1,5 @@
 import { Button, makeStyles } from "@material-ui/core";
+import { useRouter } from "next/dist/client/router";
 
 const useStyles = makeStyles((theme) => ({
   buttonContent: {
@@ -13,7 +14,15 @@ const useStyles = makeStyles((theme) => ({
 
 const LoginButton = () => {
   const classes = useStyles();
-  return <Button className={classes.buttonContent}>ログイン</Button>;
+  const router = useRouter();
+  const handleClick = () => {
+    router.push("/Login");
+  };
+  return (
+    <Button className={classes.buttonContent} onClick={handleClick}>
+      ログイン
+    </Button>
+  );
 };
 
 export default LoginButton;

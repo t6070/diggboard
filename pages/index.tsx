@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
     marginTop: 5,
   },
   bottomContentWrapper: {
-    height: "55%",
+    height: "75%",
     background: "linear-gradient(rgba(0,0,0,0),rgba(0,0,0,1))",
   },
   addressFormContent: {},
@@ -46,8 +46,9 @@ const index = () => {
           <Box className={classes.subTextArea}>
             <Typography variant="body1">BTSをもっと自由に。</Typography>
             <Typography variant="body1">いつでもキャンセルOK。</Typography>
+            <Typography variant="body1">アドレスを入力して</Typography>
             <Typography variant="body1">
-              アドレスを入力して、メンバーシップを開始、または再開してください。
+              メンバーシップを開始、または再開してください。
             </Typography>
           </Box>
         </Box>
